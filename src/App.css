@@ -1,18 +1,12 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.apply{
+  background-color: #13579b;
+  border-radius: 10px;
+  padding: 3px;
+  color: rgb(252, 252, 131);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +18,35 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling the timings section */
+.timings-container {
+  display: flex;
+  gap: 12px; /* Space between timings */
+  margin-top: 10px; /* Space between theatre name and timings */
+  padding: 4px;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timing-item {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.timing-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.seatbutton{
+  background-color: rgb(12, 156, 144);
+  color: rgba(222, 222, 222, 0.76);
+}
+
+.disable{
+  pointer-events: none;
+  cursor: not-allowed;
 }
